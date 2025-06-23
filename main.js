@@ -22,4 +22,12 @@ var swiper = new Swiper(".mySwiper", {
     }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('.navbar__list');
+
+    burger.addEventListener('click', () => {
+        menu.classList.toggle('show');
+    });
+});
     
