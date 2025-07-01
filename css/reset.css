@@ -13,6 +13,9 @@
 a:focus,a:active {outline: none;}
 nav, footer,header,aside{display: block;}
 
+:root {
+     color-scheme: only light;
+} 
 
 html, body{
     height: 100%;
