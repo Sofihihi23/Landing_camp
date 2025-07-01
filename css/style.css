@@ -38,7 +38,9 @@ a {
     background-size: cover;
     /* opacity: 80%; */
     background-position: center;
+    
 }
+
 .burger {
     display: none;
     flex-direction: column;
@@ -59,11 +61,12 @@ a {
 }
 
 /* Адаптивные стили */
-@media (max-width: 768px) {
+@media (max-width: 904px) {
 
     /* Показываем бургер */
     .burger {
         display: flex;
+        /* flex-direction: column; */
     }
 
     /* Скрываем меню по умолчанию */
@@ -71,20 +74,26 @@ a {
         position: absolute;
         top: 100%;
         right: 0;
-        background-color: #e90f0f;
+        background-color: #0101013c;
+        align-items: center;
         /* или ваш цвет фона */
         flex-direction: column;
-        width: 200px;
+        width: 100%;
         /* ширина меню */
         display: none;
         /* по умолчанию скрыто */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         z-index: 1000;
+        padding: 10px;
+    }
+    .navbar__item>a {
+        font-size: 25px;
     }
 
     /* Показываем меню при активном состоянии */
     .navbar__list.show {
         display: flex;
+        position: relative;
     }
 }
 
@@ -100,6 +109,9 @@ a {
     /* gap: 99px; */
     justify-content: space-between;
     align-items: center;
+    background-color: #00000048;
+    border-radius: 24px;
+
 }
 
 .navbar__list {
@@ -108,7 +120,7 @@ a {
 }
 
 .navbar__item {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 600;
 }
 
@@ -126,26 +138,32 @@ a {
 
 .header__content {
     margin-top: 300px;
+    background-color: #00000098;
+    padding: 10px;
+    border-radius: 24px;
+
 }
 
 .header__title {
-    color: #000000;
-    font-size: 50px;
+    color: #72fd00;
+    font-size: 54px;
     font-weight: 700;
     line-height: 150%;
     letter-spacing: 2%;
     text-transform: uppercase;
+    
 }
 
 .header__description {
     color: #fff;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 700;
     line-height: 150%;
-    background-color: #00000066;
-    padding: 27px 12px;
-    border-radius: 24px;
-    margin-bottom: 153px;
+    margin-top: 10px;
+    /* background-color: #00000066;
+    padding: 27px 12px; */
+    /* border-radius: 24px; */
+    /* margin-bottom: 153px; */
 }
 
 .main {
@@ -157,9 +175,11 @@ a {
     margin-bottom: 100px; */
     position: relative;
 }
+
 .branch1 {
     display: none;
 }
+
 .branch2 {
     display: none;
 }
@@ -257,18 +277,22 @@ a {
 
     }
 }
+
 @media (max-width:787px) {
     .branch1 {
         top: 580px;
     }
+
     .branch2 {
         top: 580px;
     }
 }
+
 @media (max-width:510px) {
     .branch1 {
         top: 680px;
     }
+
     .branch2 {
         top: 680px;
     }
