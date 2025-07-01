@@ -40,9 +40,28 @@ a {
     background-position: center;
     
 }
+@media (max-width: 797px){
+    .header{
+        background-image: url(../elf/yy.jpeg);
+        /* background-color: #1a3e3eb4; */
+        /* background-image: none; */
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 543px){
+    .header {
+        /* background-size: 200%; */
+        background-repeat: no-repeat;
+        /* background-position:unset; */
+
+    }
+}
 
 .burger {
-    /* display: none; */
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     width: 30px;
@@ -54,7 +73,7 @@ a {
 
 .burger span {
     display: block;
-    height: 3px;
+    height: 4px;
     background-color: #000;
     /* или ваш цвет */
     border-radius: 2px;
@@ -129,7 +148,7 @@ a {
     .navbar__item>a {
         /* display: none; */
 
-        font-size: 25px;
+        font-size: 14px;
     }
 
     /* Показываем меню при активном состоянии */
@@ -140,12 +159,32 @@ a {
     }
 }
 
+@media (max-width: 413px) {
+    .navbar {
+        height: 100px;
+    }
+    .logo {
+        display: none;
+        /* display: block; */
+        /* align-items: center; */
+        /* clear: both; */
+    }
+    .burger {
+        margin-left: 30px;
+    }
+}
+
 .header__content {
     margin-top: 300px;
     background-color: #00000098;
     padding: 10px;
     border-radius: 24px;
 
+}
+@media (max-width: 797px) {
+    .header__content {
+        margin-top: 100px;
+    }
 }
 
 .header__title {
@@ -157,7 +196,6 @@ a {
     text-transform: uppercase;
     
 }
-
 .header__description {
     color: #fff;
     font-size: 22px;
@@ -169,6 +207,18 @@ a {
     /* border-radius: 24px; */
     /* margin-bottom: 153px; */
 }
+
+@media (max-width: 600px) {
+    .header__title {
+        font-size: 24px;
+    }
+
+    .header__description {
+        font-size: 18px;
+    }
+}
+
+
 
 .main {
     flex-grow: 1;
