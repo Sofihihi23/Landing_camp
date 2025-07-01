@@ -74,7 +74,7 @@ a {
 .burger span {
     display: block;
     height: 4px;
-    background-color: #000;
+    background-color: #ff0000;
     /* или ваш цвет */
     border-radius: 2px;
 }
