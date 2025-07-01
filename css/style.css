@@ -42,7 +42,7 @@ a {
 }
 @media (max-width: 797px){
     .header{
-        background-image: url(../elf/yy.jpeg);
+        background-image: url(../img/yy.webp);
         /* background-color: #1a3e3eb4; */
         /* background-image: none; */
         background-size: cover;
