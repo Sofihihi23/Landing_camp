@@ -31,4 +31,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
     
-document.body.style.backgroundColor = "#ffffff";
+document.body.setAttribute('style', 'background-color: #ffffff !important;');
