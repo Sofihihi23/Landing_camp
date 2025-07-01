@@ -31,3 +31,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
     
+document.body.style.backgroundColor = "#ffffff";
