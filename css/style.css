@@ -134,7 +134,7 @@ a {
         position: absolute;
         top: 100%;
         right: 0;
-        background-color: #ff00003c;
+        background-color: #510000e6;
         align-items: center;
         /* или ваш цвет фона */
         flex-direction: column;
@@ -147,7 +147,7 @@ a {
     }
     .navbar__item>a {
         /* display: none; */
-
+        font-weight: 700;
         font-size: 14px;
     }
 
