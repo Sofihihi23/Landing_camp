@@ -42,7 +42,7 @@ a {
 }
 
 .burger {
-    display: none;
+    /* display: none; */
     flex-direction: column;
     justify-content: space-around;
     width: 30px;
@@ -60,42 +60,7 @@ a {
     border-radius: 2px;
 }
 
-/* Адаптивные стили */
-@media (max-width: 904px) {
 
-    /* Показываем бургер */
-    .burger {
-        display: flex;
-        /* flex-direction: column; */
-    }
-
-    /* Скрываем меню по умолчанию */
-    .navbar__list {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background-color: #0101013c;
-        align-items: center;
-        /* или ваш цвет фона */
-        flex-direction: column;
-        width: 100%;
-        /* ширина меню */
-        display: none;
-        /* по умолчанию скрыто */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-        padding: 10px;
-    }
-    .navbar__item>a {
-        font-size: 25px;
-    }
-
-    /* Показываем меню при активном состоянии */
-    .navbar__list.show {
-        display: flex;
-        position: relative;
-    }
-}
 
 .logo {
     width: 120px;
@@ -134,6 +99,45 @@ a {
     background-color: #1A3E3E;
     border-radius: 4px;
     padding: 12px 24px;
+}
+/* Адаптивные стили */
+@media (max-width: 904px) {
+
+    /* Показываем бургер */
+    .burger {
+        display: flex;
+        /* flex-direction: column; */
+    }
+
+    /* Скрываем меню по умолчанию */
+    .navbar__list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #ff00003c;
+        align-items: center;
+        /* или ваш цвет фона */
+        flex-direction: column;
+        width: 100%;
+        /* ширина меню */
+        /* по умолчанию скрыто */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        padding: 10px;
+    }
+    .navbar__item>a {
+        /* display: none; */
+
+        font-size: 25px;
+    }
+
+    /* Показываем меню при активном состоянии */
+    .navbar__list.show {
+        display: flex;
+        position: relative;
+        
+    }
 }
 
 .header__content {
