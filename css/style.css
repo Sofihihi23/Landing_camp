@@ -589,6 +589,15 @@ a {
     /* height: 100%; */
 }
 
+@media (max-width:1000px) {
+    .gallery__img {
+        gap: 6px
+    }
+    .gallery__img2 {
+        gap: 6px
+    }
+}
+
 .gallery__video {
     width: 100%;
     height: auto;
